@@ -13,7 +13,7 @@
         /* General page styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+           
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,10 +21,36 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
-        }
+              background: linear-gradient(45deg, #4A90E2, #3cff00, #FF4E50, #F9D423);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Rest of the styling for your elements */
+h1 {
+    font-size: 2.5rem;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+form {
+    background-color: rgba(80, 73, 73, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(124, 124, 124, 0.1);
+    animation: slideIn 0.8s ease-in-out;
+}
+        
 
         h1 {
-            color: #333;
+            color: #f5f5f5;
             margin-bottom: 20px;
         }
 
@@ -36,7 +62,7 @@
 
         label {
             font-size: 16px;
-            color: #555;
+            color: #a7a3a3;
         }
 
         input[type="text"] {
